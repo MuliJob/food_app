@@ -9,7 +9,6 @@ class AppWidget{
                 fontFamily: 'Ubuntu');
   }
 
-
   static TextStyle headLineTextFieldStyle() {
     return TextStyle(
                 color: Colors.black, 
@@ -21,9 +20,18 @@ class AppWidget{
 
   static TextStyle lightTextFieldStyle() {
     return TextStyle(
-                color: Colors.black38, 
+                color: Colors.black54, 
                 fontSize: 15.0, 
                 fontWeight: FontWeight.w500, 
                 fontFamily: 'Ubuntu');
   }
+
+  static TextStyle semiBoldTextFieldStyle() {
+    return TextStyle(
+                color: Colors.black87, 
+                fontSize: 18.0, 
+                fontWeight: FontWeight.w500, 
+                fontFamily: 'Ubuntu');
+  }
+
 }
