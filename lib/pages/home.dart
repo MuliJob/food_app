@@ -103,35 +103,52 @@ bool icecream=false, pizza=false, salad=false, burger=false;
                           ),
                         ),
                       ),
-
-                      SizedBox(width: 15.0,),
-                      Container(
-                        margin: EdgeInsets.all(4),
-                        child: Material(
-                          elevation: 5.0,
-                          borderRadius: BorderRadius.circular(20),
-                          child: Container(
-                            padding: EdgeInsets.all(14),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                              Image.asset(
-                                "images/salad4.png",
-                                height: 150,
-                                width: 150,
-                                fit: BoxFit.cover,
-                              ),
-                              Text("Veggie Taco", style: AppWidget.semiBoldTextFieldStyle(),),
-                              SizedBox(height: 5.0,),
-                              Text("Fresh and Healthy", style: AppWidget.lightTextFieldStyle(),),
-                              SizedBox(height: 5.0,),
-                              Text("Ksh.600", style: AppWidget.semiBoldTextFieldStyle(),)
-                            ],),
+                    ],),
+                  ),
+                  SizedBox(height: 30.0,),
+                  Container(
+                    margin: EdgeInsets.only(right: 20.0),
+                    child: Material(
+                      elevation: 5.0,
+                      borderRadius: BorderRadius.circular(20),
+                      child: Container(
+                        padding: EdgeInsets.all(5),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Image.asset(
+                              "images/salad2.png",
+                            height: 120,
+                            width: 120,
+                            fit: BoxFit.cover,
                           ),
+                          SizedBox(height: 20.0,),
+                          Column(
+                            children: [
+                              Container(
+                                width: MediaQuery.of(context).size.width/2.5,
+                                child: Text("Mediterranean Chickpea Salad", style: AppWidget.semiBoldTextFieldStyle(),
+                                ),
+                              ),
+                              SizedBox(height: 5.0,),
+                              Container(
+                                width: MediaQuery.of(context).size.width/2.5,
+                                child: Text("Honey goot cheese", style: AppWidget.lightTextFieldStyle(),
+                                ),
+                              ),
+                              SizedBox(height: 5.0,),
+                              Container(
+                                width: MediaQuery.of(context).size.width/2.5,
+                                child: Text("Ksh.700", style: AppWidget.semiBoldTextFieldStyle(),
+                                ),
+                              ),
+                            ],
+                            ),
+                          ],
                         ),
                       ),
-                    ],),
-                  )
+                    ),
+                  ),
           ],
         ),
       ),
